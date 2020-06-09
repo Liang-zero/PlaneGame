@@ -4,7 +4,7 @@ class Bullet(Sprite):
     def __init__(self,screen,plane):
        Sprite.__init__(self)
        self.screen=screen
-       self.image=pygame.image.load("images/飞船.png")
+       self.image=pygame.image.load("images/bullet.png")
        self.rect=self.image.get_rect()
        self.rect.centerx=plane.rect.centerx
        self.rect.top=plane.rect.top-30
